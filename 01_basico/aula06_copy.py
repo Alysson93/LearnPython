@@ -1,3 +1,5 @@
+import copy
+
 nome = 'Alysson'
 
 novo = nome
@@ -8,7 +10,7 @@ print(novo, nome)
 
 print('========================')
 
-# Com listas, a cópia não ocorre da mesma forma.
+# Com dados mutáveis, a cópia não ocorre da mesma forma.
 # As duas variáveis apontam para o mesmo endereço.
 
 lista = ['Aliçu', 'Pereira', 'Assunção']
@@ -29,3 +31,24 @@ lista_nova = lista.copy()
 lista_nova[0] = 'Alison'
 
 print(lista, lista_nova)
+
+print('========================')
+
+
+# Com dados mutáveis, deve-se usar uma deep copy.
+
+pessoa = {
+	'nome': 'Alysson',
+	'idade': 28,
+	'emails': [
+		'apa1@discente.ifpe.edu.br',
+		'alyssondev93@outlook.com.br'
+	]
+}
+
+nova_pessoa = copy.deepcopy(pessoa)
+
+nova_pessoa['emails'] = 'No emails'
+
+print(pessoa)
+print(nova_pessoa)

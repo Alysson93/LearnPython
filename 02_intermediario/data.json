@@ -1,0 +1,23 @@
+{
+  "nome": "Alysson",
+  "sobrenome": "Pereira Assunção",
+  "altura": 1.63,
+  "dev": true,
+  "technologies": [
+    "Python",
+    "C#",
+    "JavaScript"
+  ],
+  "enderecos": [
+    {
+      "rua": "C. Ludugero",
+      "bairro": "Cohab 1",
+      "n": 80
+    },
+    {
+      "rua": "Não lembro",
+      "bairro": "Pontilhão",
+      "n": 84
+    }
+  ]
+}
